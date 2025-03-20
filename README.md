@@ -1,19 +1,81 @@
-# 🎈 Blank app template
+# Web Scraper Tool
 
-A simple Streamlit app template for you to modify!
+## 🚀 Overview
+This is a simple web scraper built using Python, Streamlit, Requests, and BeautifulSoup. It extracts useful information from a given website URL, including:
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+- **Emails** 📧
+- **Phone Numbers** 📞
+- **Addresses** 🏠
+- **Website Title** 🌐
+- **Links from the Page** 🔗
+- **Names from Headers (h1, h2, h3)** 🔤
 
-### How to run it on your own machine
+The extracted data can be viewed in the Streamlit app and downloaded as a CSV file.
 
-1. Install the requirements
+---
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 🛠️ Technologies Used
+- **Python** 🐍
+- **Streamlit** (For UI)
+- **Requests** (For fetching webpage content)
+- **BeautifulSoup** (For parsing HTML)
+- **Pandas** (For data handling & CSV export)
+- **Regular Expressions (re)** (For extracting emails, phone numbers, and addresses)
 
-2. Run the app
+---
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## 📌 Installation & Setup
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-repo/web-scraper.git
+cd web-scraper
+```
+
+### 2️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run the Streamlit App
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🎯 How to Use
+1. Enter a website URL in the input field.
+2. Click on the **Scrape** button.
+3. The tool will extract emails, phone numbers, addresses, and other information.
+4. View the extracted data in the UI.
+5. Click on **Download CSV** to save the data.
+
+---
+
+## 🏗️ Project Structure
+```
+📂 web-scraper
+ ├── 📄 app.py               # Main Streamlit App
+ ├── 📄 requirements.txt     # Dependencies
+ ├── 📄 README.md            # Documentation
+```
+
+---
+
+## 📝 Notes
+- **Headers** are used in the request to avoid getting blocked.
+- **Data Extraction** uses regex for improved accuracy.
+- **CSV Export** allows easy data storage and analysis.
+
+---
+
+## 🛡️ Disclaimer
+This tool is for educational purposes only. Ensure you comply with website scraping policies before using it.
+
+---
+
+## 📩 Contact
+For any issues or suggestions, feel free to reach out!
+
+Happy Scraping! 🚀
+
